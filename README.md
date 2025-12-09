@@ -14,4 +14,5 @@ The first dataset that we examined, `recipes`, contains 83,782 rows and 12 colum
 | Column | Description |
 | ----------- | ----------- |
 | `name` | Recipe name|
-| Paragraph | Text |
+| 'id' | Text |
+| | |
