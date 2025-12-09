@@ -53,5 +53,6 @@ Before we dive right into exploring and working with our data, we first had to p
    - The resulting dataset has a row for each unique review corresponding to the recipe. The resulting dataframe is `recipe_interactions`.
 3. We then replaced all ratings of 0 with `np.nan`.
    - This makes sense for our dataset since ratings are only a scale of 1-5, so ratings of 0 are treated as missing ratings instead. This avoids our ratings being biased downwards when performing certain operations.
-4. We then added a new column, `avg_rating`
-
+4. We then added a new column, `avg_rating`, which consists of the average rating for the recipe in the corresponding row.
+5. We split the `nutrition` column into multiple seperate columns.
+   - The original `nutrition` column contained what looked like a list (of several nutritional values), but was actually a string/object. We created a function that turned the `nutrition` column into a list of floats, then turned each individual nutrition fact into its own column. This allows us to do a lot more exploratory analysis with each nutrition fact.
