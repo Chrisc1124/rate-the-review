@@ -33,11 +33,7 @@ The first dataset that we examined, `recipes`, contains 83,782 rows and 12 colum
 | `n_ingredients` | Number of ingredients in the recipe|
 
 
-The Second dataset that we examined, `interactions`, contains 731,927 rows and 5 columns with each row corresponding to an individual review from a user. The 5 
-
-
-
-columns include :
+The Second dataset that we examined, `interactions`, contains 731,927 rows and 5 columns with each row corresponding to an individual review from a user. The 5 columns include :
 
 | Column | Description |
 | ----------- | ----------- |
