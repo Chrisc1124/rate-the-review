@@ -13,6 +13,18 @@ The first dataset that we examined, `recipes`, contains 83,782 rows and 12 colum
 
 | Column | Description |
 | ----------- | ----------- |
-| `name` | Recipe name|
-| 'id' | Text |
-| | |
+| `'name'` | Recipe name|
+| `id` | Recipe ID |
+| `minutes`| Minutes to prepare recipe |
+| `contributor_id` | User ID who submitted this recipe |
+| `submitted`| Date recipe was submitted|
+| `tags` | Food.com tags for recipe|
+| `nutrition` | Nutrition information in the form [calories (#), total fat (PDV), sugar (PDV), sodium (PDV), protein (PDV), saturated fat (PDV), carbohydrates (PDV)]; PDV stands for "percentage of daily value"|
+| `n_steps` | Number of steps in the recipe|
+| `steps` | Text for recipe steps, in order|
+| `description`| User-provided description of the recipe|
+| `ingredients` | Text for recipe ingredients|
+| `n_ingredients` | Number of ingredients in the recipe|
+
+
+The Second dataset that we examined, `interactions`, contains 731,927 rows and 5 columns with each row corresponding to an individual review from a user. The 5 columns include :
