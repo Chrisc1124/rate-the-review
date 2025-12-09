@@ -11,7 +11,7 @@ Food connects people, cultures, and everyday experiences. Whether we’re trying
 
 Both of us love cooking and discovering new dishes, and we noticed how often people rely on these reviews to decide what’s worth making. That sparked our interest in digging deeper: What actually makes a review helpful? Do certain ingredients or nutritional qualities influence ratings? Can we predict how well a recipe will be received just from the text people write?
 
-To answer these questions, we analyzed two large datasets from Food.com—one containing over 80,000 recipes and another containing millions of user interactions. Our project explores this ecosystem from multiple angles: understanding missingness patterns, performing exploratory data analysis on recipe characteristics, testing hypotheses about nutrition and ratings, and building a predictive model using TF-IDF and logistic regression to classify review sentiment.
+To answer these questions, we analyzed two large datasets from Food.com—one containing over 80,000 recipes and another containing over 700,000 of user interactions. Our project explores this ecosystem from multiple angles: understanding missingness patterns, performing exploratory data analysis on recipe characteristics, testing hypotheses about nutrition and ratings, and building a predictive model using TF-IDF and logistic regression to classify review sentiment.
 
 Through this process, we aim to better understand the relationship between how people talk about food and how they choose to rate it.
 
@@ -33,4 +33,17 @@ The first dataset that we examined, `recipes`, contains 83,782 rows and 12 colum
 | `n_ingredients` | Number of ingredients in the recipe|
 
 
-The Second dataset that we examined, `interactions`, contains 731,927 rows and 5 columns with each row corresponding to an individual review from a user. The 5 columns include :
+The Second dataset that we examined, `interactions`, contains 731,927 rows and 5 columns with each row corresponding to an individual review from a user. The 5 
+
+
+
+columns include :
+
+| Column | Description |
+| ----------- | ----------- |
+| `user_id` | User ID who made the review|
+| `recipe_id`| Recipe ID|
+| `date`| Date of review|
+| `rating`| Rating given on a 1-5 scale|
+| `review`| Review text given|
+
