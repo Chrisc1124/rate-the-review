@@ -156,3 +156,17 @@ In this section, we wanted to continue looking at the `description` column and i
 - **Alternate Hypothesis**: Missingness of description does depend on n_step
 - **Test Statistic**: Difference of mean n_steps with missing description and mean n_steps with description present
 - **Significance Level**: 0.05
+
+<iframe
+  src="assets/n_steps_missingness_kde.html"
+  width="800"
+  height="550"
+  frameborder="0"
+></iframe>
+<iframe
+  src="assets/n_steps_permutation_test.html"
+  width="800"
+  height="550"
+  frameborder="0"
+></iframe>
+
