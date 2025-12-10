@@ -150,3 +150,5 @@ We believe that the missingness of the `description` column in our `recipes_inte
 
 ### Missingness Dependency (MAR Analysis)
 In this section, we wanted to continue looking at the `description` column and its missingness, however, we will be examining its missingness dependency with other columns in our dataset. Specifically, we are going to be looking at whether the missingness of `description` is dependent on `n_steps` (the number of steps in the recipe), and `n_ingredients` (the number of ingredients in the recipe).
+
+##### `n_steps` and the missingness of `description`
