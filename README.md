@@ -122,7 +122,7 @@ For this section of our data analysis, we wanted to look at the distribution and
 <iframe
   src="assets/review_length_by_rating_violin.html"
   width="800"
-  height="600"
+  height="550"
   frameborder="0"
 ></iframe>
 Here are two different graphs showing, one showing the mean review length and the other showing the distribution of review lengths, both conditioned on the rating category.
