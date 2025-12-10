@@ -125,4 +125,4 @@ For this section of our data analysis, we wanted to look at the distribution and
   height="550"
   frameborder="0"
 ></iframe>
-Here are two different graphs showing, one showing the mean review length and the other showing the distribution of review lengths, both conditioned on the rating category.
+Here are two different graphs, one showing the mean review length and the other showing the distribution of review lengths, both dependent on the individual rating categories. In both graphs, we can see that reviews who have a rating of 3 tend to have the highest mean and median review lengths (336 and 272 respectively), and those value decreases as you go up or down in rating. Overall, we can see that reviews with ratings that are on either end of the spectrum (1 and 5), tend to have lower average and median review lengths, and this does make some logical sense since the ratings may speak more for themselves here. Ratings which are more in the middle (2, 3, and 4) may leave more room for some sort of explanation to back that choice.
