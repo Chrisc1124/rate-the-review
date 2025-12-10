@@ -169,5 +169,6 @@ In this section, we wanted to continue looking at the `description` column and i
   height="500"
   frameborder="0"
 ></iframe>
+
 For this MAR test we ran a permutation test with 2000 repetitions, each time randomly shuffling the missingness of `description` and taking the difference of mean `n_steps` (description missing - not missing). Our **observed statistic** was 0.995, which is indicated by the red line on the distribution graph. This left us with a **p-value** of 0.1, which is greater than 0.05 (our significance level), thus we **fail to reject** our null hypothesis and conclude that the missingness of `description` does not depend on `n_steps`.
 
