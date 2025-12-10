@@ -152,7 +152,7 @@ We believe that the missingness of the `description` column in our `recipes_inte
 In this section, we wanted to continue looking at the `description` column and its missingness, however, we will be examining its missingness dependency with other columns in our dataset. Specifically, we are going to be looking at whether the missingness of `description` is dependent on `n_steps` (the number of steps in the recipe), and `n_ingredients` (the number of ingredients in the recipe).
 
 ##### `n_steps` and the missingness of `description`
-- Null Hypothesis: Missingness of description does not depend on n_steps
-- Alternate Hypothesis: Missingness of description does depend on n_step
-- Test Statistic: Difference of mean n_steps with missing description and mean n_steps with description present
-- Significance Level: 0.05
+- **Null Hypothesis**: Missingness of description does not depend on n_steps
+- **Alternate Hypothesis**: Missingness of description does depend on n_step
+- **Test Statistic**: Difference of mean n_steps with missing description and mean n_steps with description present
+- **Significance Level**: 0.05
