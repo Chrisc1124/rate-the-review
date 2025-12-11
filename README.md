@@ -189,7 +189,7 @@ For this MAR test we ran a permutation test with 2000 repetitions, each time ran
 <iframe
   src="assets/n_ingredients_permutation_test.html"
   width="800"
-  height="500"
+  height="450"
   frameborder="0"
 ></iframe>
 
@@ -209,7 +209,7 @@ We used a permutation test because it requires no distributional assumptions, wh
 <iframe
   src="assets/hypothesis_test.html"
   width="800"
-  height="500"
+  height="520"
   frameborder="0"
 ></iframe>
 
