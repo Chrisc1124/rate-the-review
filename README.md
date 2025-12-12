@@ -308,7 +308,7 @@ We selected 35 minutes as the threshold because it is the median cooking time in
 <iframe
   src="assets/fairness_test.html"
   width="800"
-  height="500"
+  height="520"
   frameborder="0"
 ></iframe>
 
