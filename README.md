@@ -290,3 +290,27 @@ We evaluate the final model using F1-macro. The model achieves an F1-macro score
   height="450"
   frameborder="0"
 ></iframe>
+
+---
+
+## Fariness Analysis
+For our fairness analysis, we compared the model’s performance across two groups based on cooking time:
+- **Quick recipes**: cooking time ≤ 35 minutes (23,288 reviews)
+- **Slow recipes**: cooking time > 35 minutes (20,580 reviews)
+
+We selected 35 minutes as the threshold because it is the median cooking time in the dataset, which creates two balanced groups and ensures that any observed differences are not caused by disproportionate sample sizes. We chose to evaluate precision for the positive class (`highly_rated` = 1), since precision measures how often the model’s predictions of “highly rated” are correct. High precision is especially important for maintaining user trust—mislabeling a low-rated recipe as highly rated could mislead users toward a disappointing cooking experience. We used precision parity as our fairness criterion. A fair model should achieve similar precision across both groups, meaning it should be equally accurate when predicting positive ratings for quick and slow recipes.
+
+- **Null Hypothesis**: The model is fair. Its precision for quick and slow recipes is approximately the same, and any differences are due to random chance.
+- **Alternative Hypothesis**: The model is unfair. Its precision for quick recipes differs from its precision for slow recipes. (We use a two-sided test, because fairness requires detecting performance differences in either direction.)
+- **Test Statistic**: Difference in precision: Quick – Slow
+- **Significance Level**: 0.05
+
+<iframe
+  src="assets/fairness_test.html"
+  width="800"
+  height="450"
+  frameborder="0"
+></iframe>
+
+The **observed difference** was **0.0012** (quick: 0.9875, slow: 0.9863), which is extremely small. To evaluate whether this difference could occur by chance, we conducted a permutation test with 10,000 repetitions, shuffling the group labels to generate the null distribution. The resulting **p-value** was **0.3123**, which is well above our chosen significance level of 0.05. Thus, we fail to reject the null hypothesis. There is no statistically significant difference in precision between quick and slow recipes. This suggests that the model performs comparably across both groups and does not exhibit evidence of unfairness with respect to cooking time.
+  
