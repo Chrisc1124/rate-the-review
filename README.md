@@ -230,3 +230,21 @@ Because the dataset is extremely imbalanced (around 94% highly rated vs. 6% low 
   height="450"
   frameborder="0"
 ></iframe>
+
+---
+## Baseline Model
+For our baseline model, we use a **logistic regression classifier** trained on an 80/20 stratified split of the data. The model incorporates two features:
+
+- `review`: the user’s written review text
+- `n_steps`: a numeric variable representing the number of steps in the recipe
+
+For preprocessing, we convert the `review` text into TF-IDF vectors using a TfidfVectorizer with English stop words removed. This transforms each review into a high-dimensional numerical representation that highlights informative words while down-weighting very common ones. The `n_steps` feature is already quantitative, so it passes through without additional encoding. Because the dataset is highly imbalanced, we set class_weight="balanced" to ensure that both classes contribute equally to the learning process.
+
+Our primary evaluation metric is F1-macro, which treats the low-rated and highly-rated classes with equal importance. The model achieves an overall **F1-macro** score of **0.7203**, with class-specific F1 scores of 0.72 for low-rated reviews and 0.72 for highly-rated reviews. This balanced performance indicates that the model is capturing meaningful patterns from both the text and recipe characteristics rather than defaulting to the majority class. While the baseline performs reasonably well, the F1-macro score also shows clear room for improvement, especially in capturing more nuance within the review text.
+
+<iframe
+  src="assets/baseline_confusion_matrix.html"
+  width="800"
+  height="450"
+  frameborder="0"
+></iframe>
